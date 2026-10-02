@@ -1,0 +1,986 @@
+[22-Sep-2026 14:01:57 Asia/Jakarta] PHP Warning:  Undefined variable $router in C:\laragon\www\invIT\routes\web.php on line 10
+[22-Sep-2026 14:01:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in C:\laragon\www\invIT\routes\web.php:10
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\App.php(97): require_once()
+#1 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#2 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#3 {main}
+  thrown in C:\laragon\www\invIT\routes\web.php on line 10
+[22-Sep-2026 14:02:10 Asia/Jakarta] PHP Warning:  Undefined variable $router in C:\laragon\www\invIT\routes\web.php on line 10
+[22-Sep-2026 14:02:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in C:\laragon\www\invIT\routes\web.php:10
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\App.php(97): require_once()
+#1 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#2 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#3 {main}
+  thrown in C:\laragon\www\invIT\routes\web.php on line 10
+[22-Sep-2026 14:02:26 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: App\Core\View::render(): Argument #3 ($layout) must be of type string, null given, called in C:\laragon\www\invIT\app\Controllers\AuthController.php on line 15 and defined in C:\laragon\www\invIT\app\Core\View.php:8
+Stack trace:
+#0 C:\laragon\www\invIT\app\Controllers\AuthController.php(15): App\Core\View::render('auth/login', Array, NULL)
+#1 C:\laragon\www\invIT\app\Core\Router.php(57): App\Controllers\AuthController->loginForm()
+#2 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#3 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#4 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\invIT\app\Core\View.php on line 8
+[22-Sep-2026 14:02:34 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: App\Core\View::render(): Argument #3 ($layout) must be of type string, null given, called in C:\laragon\www\invIT\app\Controllers\AuthController.php on line 15 and defined in C:\laragon\www\invIT\app\Core\View.php:8
+Stack trace:
+#0 C:\laragon\www\invIT\app\Controllers\AuthController.php(15): App\Core\View::render('auth/login', Array, NULL)
+#1 C:\laragon\www\invIT\app\Core\Router.php(57): App\Controllers\AuthController->loginForm()
+#2 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#3 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#4 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\invIT\app\Core\View.php on line 8
+[22-Sep-2026 14:03:25 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\AuthController::login(), 0 passed in C:\laragon\www\invIT\app\Core\Router.php on line 57 and exactly 1 expected in C:\laragon\www\invIT\app\Controllers\AuthController.php:18
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Router.php(57): App\Controllers\AuthController->login()
+#1 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#2 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#3 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#4 {main}
+  thrown in C:\laragon\www\invIT\app\Controllers\AuthController.php on line 18
+[22-Sep-2026 14:03:49 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(89): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:03:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Models\Database" not found in C:\laragon\www\invIT\app\Models\Transaction.php:28
+Stack trace:
+#0 C:\laragon\www\invIT\app\Controllers\DashboardController.php(59): App\Models\Transaction::monthlyCount('Loaned')
+#1 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\DashboardController->index()
+#2 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#3 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#4 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\invIT\app\Models\Transaction.php on line 28
+[22-Sep-2026 14:04:04 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(89): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:04:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Models\Database" not found in C:\laragon\www\invIT\app\Models\Transaction.php:28
+Stack trace:
+#0 C:\laragon\www\invIT\app\Controllers\DashboardController.php(59): App\Models\Transaction::monthlyCount('Loaned')
+#1 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\DashboardController->index()
+#2 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#3 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#4 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\invIT\app\Models\Transaction.php on line 28
+[22-Sep-2026 14:04:41 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(89): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:04:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Auth" not found in C:\laragon\www\invIT\views\layouts\app.php:14
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\View.php(27): require()
+#1 C:\laragon\www\invIT\app\Controllers\DashboardController.php(64): App\Core\View::render('dashboard/index', Array)
+#2 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\DashboardController->index()
+#3 C:\laragon\www\invIT\app\Core\App.php(100): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\views\layouts\app.php on line 14
+[22-Sep-2026 14:05:07 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(89): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:05:22 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(89): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:05:26 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Core\Database.php(42): App\Core\Database::run('SELECT a.*, c.n...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\SearchController.php(20): App\Core\Database::select('SELECT a.*, c.n...', Array)
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\SearchController->index(Object(App\Core\Request))
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:06:32 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(89): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:06:32 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:06:32 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:06:32 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function recordTransaction() on array in C:\laragon\www\invIT\app\Controllers\AssetController.php:121
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#1 C:\laragon\www\invIT\app\Controllers\AssetController.php(116): App\Core\Database::transaction(Object(Closure))
+#2 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->store(Object(App\Core\Request))
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 121
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:06:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function recordTransaction() on array in C:\laragon\www\invIT\app\Controllers\AssetController.php:121
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#1 C:\laragon\www\invIT\app\Controllers\AssetController.php(116): App\Core\Database::transaction(Object(Closure))
+#2 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->store(Object(App\Core\Request))
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 121
+[22-Sep-2026 14:06:38 Asia/Jakarta] PHP Warning:  Undefined variable $colName in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:06:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\invIT\app\Core\Excel.php:39
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Excel.php(22): App\Core\Excel::build(Array, Array, 'Inventory')
+#1 C:\laragon\www\invIT\app\Controllers\ReportController.php(203): App\Core\Excel::download('Inventory.xlsx', Array, Array, 'Inventory')
+#2 C:\laragon\www\invIT\app\Controllers\ReportController.php(177): App\Controllers\ReportController->doExport('inventory')
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\ReportController->export(Object(App\Core\Request), 'inventory')
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:06:39 Asia/Jakarta] PHP Warning:  Undefined variable $colName in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:06:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\invIT\app\Core\Excel.php:39
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Excel.php(22): App\Core\Excel::build(Array, Array, 'Loan History')
+#1 C:\laragon\www\invIT\app\Controllers\ReportController.php(270): App\Core\Excel::download('Loan_History.xl...', Array, Array, 'Loan History')
+#2 C:\laragon\www\invIT\app\Controllers\ReportController.php(177): App\Controllers\ReportController->doExport('loans-history')
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\ReportController->export(Object(App\Core\Request), 'loans-history')
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(89): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:07:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function recordTransaction() on array in C:\laragon\www\invIT\app\Controllers\AssetController.php:121
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#1 C:\laragon\www\invIT\app\Controllers\AssetController.php(116): App\Core\Database::transaction(Object(Closure))
+#2 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->store(Object(App\Core\Request))
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 121
+[22-Sep-2026 14:09:19 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:19 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:19 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:19 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:19 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:20 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:20 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:20 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:20 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:21 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:21 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:21 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:21 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:21 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:21 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:30 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:30 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:30 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Models\Model::count() in C:\laragon\www\invIT\app\Models\Model.php on line 230
+[22-Sep-2026 14:09:46 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:09:46 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:46 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:46 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:47 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:47 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:47 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:47 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Response.php(46): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(89): App\Core\Response->abort(404, 'Page not found.')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:47 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:48 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:48 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(42): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('admin')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:48 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:48 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:09:48 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(21): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('auth')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:11:37 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(29): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:11:37 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Models\User to property App\Core\Auth::$user of type ?array in C:\laragon\www\invIT\app\Core\Auth.php:41
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Auth.php(52): App\Core\Auth::user()
+#1 C:\laragon\www\invIT\app\Core\Middleware.php(33): App\Core\Auth::check()
+#2 C:\laragon\www\invIT\app\Core\Router.php(50): App\Core\Middleware::authorize('staff')
+#3 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#4 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#5 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Auth.php on line 41
+[22-Sep-2026 14:13:18 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(30): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 97
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 99
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 100
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `assets`...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\AssignmentController.php(105): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssignmentController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\AssignmentController.php(87): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssignmentController->store(Object(App\Core\Request))
+#6 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:13:19 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `assets`...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\LoanController.php(157): App\Models\Model::update(2, Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\LoanController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\LoanController.php(138): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\LoanController->store(Object(App\Core\Request))
+#6 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:13:20 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 78
+[22-Sep-2026 14:13:20 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 80
+[22-Sep-2026 14:13:20 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `assets`...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\MaintenanceController.php(84): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\MaintenanceController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\MaintenanceController.php(69): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\MaintenanceController->store(Object(App\Core\Request))
+#6 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:13:20 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 56
+[22-Sep-2026 14:13:20 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 75
+[22-Sep-2026 14:13:20 Asia/Jakarta] PHP Warning:  Undefined variable $colName in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:13:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\invIT\app\Core\Excel.php:39
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Excel.php(22): App\Core\Excel::build(Array, Array, 'Inventory')
+#1 C:\laragon\www\invIT\app\Controllers\ReportController.php(203): App\Core\Excel::download('Inventory.xlsx', Array, Array, 'Inventory')
+#2 C:\laragon\www\invIT\app\Controllers\ReportController.php(177): App\Controllers\ReportController->doExport('inventory')
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\ReportController->export(Object(App\Core\Request), 'inventory')
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:13:21 Asia/Jakarta] PHP Warning:  Undefined variable $colName in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:13:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\invIT\app\Core\Excel.php:39
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Excel.php(22): App\Core\Excel::build(Array, Array, 'Loan History')
+#1 C:\laragon\www\invIT\app\Controllers\ReportController.php(270): App\Core\Excel::download('Loan_History.xl...', Array, Array, 'Loan History')
+#2 C:\laragon\www\invIT\app\Controllers\ReportController.php(177): App\Controllers\ReportController->doExport('loans-history')
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\ReportController->export(Object(App\Core\Request), 'loans-history')
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:14:27 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `users` ...', Array)
+#2 C:\laragon\www\invIT\app\Core\Auth.php(30): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Controllers\AuthController.php(30): App\Core\Auth::attempt('admin@invit.loc...', 'admin123')
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->login(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:14:27 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 97
+[22-Sep-2026 14:14:27 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 99
+[22-Sep-2026 14:14:27 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 100
+[22-Sep-2026 14:14:27 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `assets`...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\AssignmentController.php(105): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssignmentController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\AssignmentController.php(87): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssignmentController->store(Object(App\Core\Request))
+#6 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:15:02 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 97
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 99
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 100
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:15:03 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\TransferController.php on line 105
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 78
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 80
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 56
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 75
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Warning:  Undefined variable $colName in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\invIT\app\Core\Excel.php:39
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Excel.php(22): App\Core\Excel::build(Array, Array, 'Inventory')
+#1 C:\laragon\www\invIT\app\Controllers\ReportController.php(203): App\Core\Excel::download('Inventory.xlsx', Array, Array, 'Inventory')
+#2 C:\laragon\www\invIT\app\Controllers\ReportController.php(177): App\Controllers\ReportController->doExport('inventory')
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\ReportController->export(Object(App\Core\Request), 'inventory')
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Warning:  Undefined variable $colName in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:15:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\invIT\app\Core\Excel.php:39
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Excel.php(22): App\Core\Excel::build(Array, Array, 'Loan History')
+#1 C:\laragon\www\invIT\app\Controllers\ReportController.php(270): App\Core\Excel::download('Loan_History.xl...', Array, Array, 'Loan History')
+#2 C:\laragon\www\invIT\app\Controllers\ReportController.php(177): App\Controllers\ReportController->doExport('loans-history')
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\ReportController->export(Object(App\Core\Request), 'loans-history')
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:17:41 Asia/Jakarta] PHP Warning:  Undefined variable $colName in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:17:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\laragon\www\invIT\app\Core\Excel.php:39
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Excel.php(22): App\Core\Excel::build(Array, Array, 'Inventory')
+#1 C:\laragon\www\invIT\app\Controllers\ReportController.php(203): App\Core\Excel::download('Inventory.xlsx', Array, Array, 'Inventory')
+#2 C:\laragon\www\invIT\app\Controllers\ReportController.php(177): App\Controllers\ReportController->doExport('inventory')
+#3 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\ReportController->export(Object(App\Core\Request), 'inventory')
+#4 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#5 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#6 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Excel.php on line 39
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:18:14 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 97
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 99
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 100
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\TransferController.php on line 105
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 78
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 80
+[22-Sep-2026 14:18:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 56
+[22-Sep-2026 14:18:16 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 75
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:18:48 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 97
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 99
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 100
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:18:49 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:18:50 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\TransferController.php on line 105
+[22-Sep-2026 14:18:50 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 78
+[22-Sep-2026 14:18:50 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 80
+[22-Sep-2026 14:18:50 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 56
+[22-Sep-2026 14:18:50 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 75
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 82
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 83
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 97
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 98
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 99
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 228
+[22-Sep-2026 14:18:51 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 229
+[22-Sep-2026 14:18:52 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 110
+[22-Sep-2026 14:18:52 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 115
+[22-Sep-2026 14:18:56 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: auth(): Return value must be of type ?array, App\Models\User returned in C:\laragon\www\invIT\app\Core\helpers.php:208
+Stack trace:
+#0 C:\laragon\www\invIT\views\users\index.php(39): auth()
+#1 C:\laragon\www\invIT\app\Core\View.php(45): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\invIT\app\Core\View.php(10): App\Core\View::capture('users/index', Array)
+#3 C:\laragon\www\invIT\app\Controllers\UserController.php(27): App\Core\View::render('users/index', Array)
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\UserController->index(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\helpers.php on line 208
+[22-Sep-2026 14:19:20 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: auth(): Return value must be of type ?array, App\Models\User returned in C:\laragon\www\invIT\app\Core\helpers.php:208
+Stack trace:
+#0 C:\laragon\www\invIT\views\users\index.php(39): auth()
+#1 C:\laragon\www\invIT\app\Core\View.php(45): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\invIT\app\Core\View.php(10): App\Core\View::capture('users/index', Array)
+#3 C:\laragon\www\invIT\app\Controllers\UserController.php(27): App\Core\View::render('users/index', Array)
+#4 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\UserController->index(Object(App\Core\Request))
+#5 C:\laragon\www\invIT\app\Core\App.php(141): App\Core\Router->dispatch()
+#6 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#7 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\helpers.php on line 208
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 97
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 98
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 99
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:20:41 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:21:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 168
+[22-Sep-2026 14:21:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 169
+[22-Sep-2026 14:21:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 170
+[22-Sep-2026 14:21:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 171
+[22-Sep-2026 14:21:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 173
+[22-Sep-2026 14:21:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\SettingController.php on line 61
+[22-Sep-2026 14:25:18 Asia/Jakarta] DISPATCH method=GET uri=/login BODY=[]
+[22-Sep-2026 14:25:18 Asia/Jakarta] DISPATCH matched pattern=/login handler=AuthController@loginForm
+[22-Sep-2026 14:25:18 Asia/Jakarta] DISPATCH method=POST uri=/login BODY={"_token":"665c09e57b2bab10ee8482d0cebd9db4ae3815f37dd7289d36a5210ffd0e367a","email":"admin@invit.local","password":"newadmin321"}
+[22-Sep-2026 14:25:18 Asia/Jakarta] DISPATCH matched pattern=/login handler=AuthController@login
+[22-Sep-2026 14:25:18 Asia/Jakarta] DISPATCH method=POST uri=/status BODY={"_token":"665c09e57b2bab10ee8482d0cebd9db4ae3815f37dd7289d36a5210ffd0e367a","status":"Retired"}
+[22-Sep-2026 14:25:41 Asia/Jakarta] DISPATCH method=GET uri=/login BODY=[]
+[22-Sep-2026 14:25:41 Asia/Jakarta] DISPATCH matched pattern=/login handler=AuthController@loginForm
+[22-Sep-2026 14:25:41 Asia/Jakarta] DISPATCH method=POST uri=/login BODY={"_token":"51605bbb8d1a6df683cb3cac012bb534e9cbbd93d54709370f334ec6dc4000b8","email":"admin@invit.local","password":"newadmin321"}
+[22-Sep-2026 14:25:41 Asia/Jakarta] DISPATCH matched pattern=/login handler=AuthController@login
+[22-Sep-2026 14:25:42 Asia/Jakarta] DISPATCH method=POST uri=/status BODY={"_token":"51605bbb8d1a6df683cb3cac012bb534e9cbbd93d54709370f334ec6dc4000b8","status":"Retired"}
+[22-Sep-2026 14:25:42 Asia/Jakarta] DISPATCH method=GET uri=/2 BODY=[]
+[22-Sep-2026 14:29:12 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:29:12 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:29:12 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 272
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 202
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 204
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 205
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 209
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 210
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 211
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 212
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 213
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 214
+[22-Sep-2026 14:29:13 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 217
+[22-Sep-2026 14:29:14 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`invit`.`asset_transactions`, CONSTRAINT `fk_transactions_asset` FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE CASCADE) in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(100): App\Core\Database::run('INSERT INTO `as...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\AssetController.php(255): App\Models\Model::create(Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\AssetController.php(253): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->destroy(Object(App\Core\Request), 2)
+#6 C:\laragon\www\invIT\app\Core\App.php(146): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:30:08 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`invit`.`asset_transactions`, CONSTRAINT `fk_transactions_asset` FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE CASCADE) in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(100): App\Core\Database::run('INSERT INTO `as...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\AssetController.php(255): App\Models\Model::create(Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\AssetController.php(253): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->destroy(Object(App\Core\Request), 2)
+#6 C:\laragon\www\invIT\app\Core\App.php(146): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:30:18 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`invit`.`asset_transactions`, CONSTRAINT `fk_transactions_asset` FOREIGN KEY (`asset_id`) REFERENCES `assets` (`id`) ON DELETE CASCADE) in C:\laragon\www\invIT\app\Core\Database.php:36
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(36): PDOStatement->execute(Array)
+#1 C:\laragon\www\invIT\app\Models\Model.php(100): App\Core\Database::run('INSERT INTO `as...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\AssetController.php(255): App\Models\Model::create(Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\AssetController.php(253): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->destroy(Object(App\Core\Request), 2)
+#6 C:\laragon\www\invIT\app\Core\App.php(146): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 C:\Users\admin\AppData\Local\Temp\opencode\invit_router.php(9): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 36
+[22-Sep-2026 14:32:45 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:32:45 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:34:26 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:34:26 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:34:31 Asia/Jakarta] PHP Warning:  Undefined array key "assigned_at" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 48
+[22-Sep-2026 14:34:31 Asia/Jakarta] PHP Warning:  Undefined array key "reason" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 49
+[22-Sep-2026 14:34:31 Asia/Jakarta] PHP Warning:  Undefined array key "return_due_date" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 50
+[22-Sep-2026 14:34:43 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:34:43 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:34:46 Asia/Jakarta] PHP Warning:  Undefined array key "assigned_at" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 48
+[22-Sep-2026 14:34:46 Asia/Jakarta] PHP Warning:  Undefined array key "reason" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 49
+[22-Sep-2026 14:34:46 Asia/Jakarta] PHP Warning:  Undefined array key "return_due_date" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 50
+[22-Sep-2026 14:34:46 Asia/Jakarta] PHP Warning:  Undefined array key "return_notes" in C:\laragon\www\invIT\views\print\return-form.php on line 51
+[22-Sep-2026 14:34:47 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:34:47 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:34:51 Asia/Jakarta] PHP Warning:  Undefined array key "assigned_at" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 48
+[22-Sep-2026 14:34:51 Asia/Jakarta] PHP Warning:  Undefined array key "reason" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 49
+[22-Sep-2026 14:34:51 Asia/Jakarta] PHP Warning:  Undefined array key "return_due_date" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 50
+[22-Sep-2026 14:34:51 Asia/Jakarta] PHP Warning:  Undefined array key "return_notes" in C:\laragon\www\invIT\views\print\return-form.php on line 51
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:35:55 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 97
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 99
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssignmentController.php on line 100
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:35:56 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:35:57 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\TransferController.php on line 105
+[22-Sep-2026 14:35:57 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 78
+[22-Sep-2026 14:35:57 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 80
+[22-Sep-2026 14:35:57 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 56
+[22-Sep-2026 14:35:57 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AdjustmentController.php on line 75
+[22-Sep-2026 14:35:58 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 82
+[22-Sep-2026 14:35:58 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 83
+[22-Sep-2026 14:35:58 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 84
+[22-Sep-2026 14:35:58 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 85
+[22-Sep-2026 14:35:58 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\EmployeeController.php on line 87
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 88
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 90
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 91
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 95
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 96
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 97
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 98
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 99
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 100
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 106
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 122
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 149
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 153
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 228
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\LoanController.php on line 229
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 110
+[22-Sep-2026 14:35:59 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 115
+[22-Sep-2026 14:36:00 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:36:00 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:36:00 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:36:00 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[22-Sep-2026 14:36:00 Asia/Jakarta] PHP Warning:  Undefined array key "assigned_at" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 48
+[22-Sep-2026 14:36:00 Asia/Jakarta] PHP Warning:  Undefined array key "reason" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 49
+[22-Sep-2026 14:36:00 Asia/Jakarta] PHP Warning:  Undefined array key "return_due_date" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 50
+[22-Sep-2026 14:36:01 Asia/Jakarta] PHP Warning:  Undefined array key "return_notes" in C:\laragon\www\invIT\views\print\return-form.php on line 51
+[23-Sep-2026 13:14:01 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\laragon\www\invIT\app\Core\Database.php:23
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(23): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\laragon\www\invIT\app\Core\Database.php(35): App\Core\Database::connection()
+#2 C:\laragon\www\invIT\app\Core\Database.php(47): App\Core\Database::run('SELECT value FR...', Array)
+#3 C:\laragon\www\invIT\app\Models\Setting.php(12): App\Core\Database::first('SELECT value FR...', Array)
+#4 C:\laragon\www\invIT\app\Core\helpers.php(201): App\Models\Setting::value('company_name', 'IT Inventory Sy...')
+#5 C:\laragon\www\invIT\views\auth\login.php(6): setting('company_name', 'IT Inventory Sy...')
+#6 C:\laragon\www\invIT\app\Core\View.php(45): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\invIT\app\Core\View.php(10): App\Core\View::capture('auth/login', Array)
+#8 C:\laragon\www\invIT\app\Controllers\AuthController.php(15): App\Core\View::render('auth/login', Array, NULL)
+#9 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->loginForm()
+#10 C:\laragon\www\invIT\app\Core\App.php(146): App\Core\Router->dispatch()
+#11 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#12 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 23
+[23-Sep-2026 13:14:16 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\laragon\www\invIT\app\Core\Database.php:23
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(23): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\laragon\www\invIT\app\Core\Database.php(35): App\Core\Database::connection()
+#2 C:\laragon\www\invIT\app\Core\Database.php(47): App\Core\Database::run('SELECT value FR...', Array)
+#3 C:\laragon\www\invIT\app\Models\Setting.php(12): App\Core\Database::first('SELECT value FR...', Array)
+#4 C:\laragon\www\invIT\app\Core\helpers.php(201): App\Models\Setting::value('company_name', 'IT Inventory Sy...')
+#5 C:\laragon\www\invIT\views\auth\login.php(6): setting('company_name', 'IT Inventory Sy...')
+#6 C:\laragon\www\invIT\app\Core\View.php(45): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\invIT\app\Core\View.php(10): App\Core\View::capture('auth/login', Array)
+#8 C:\laragon\www\invIT\app\Controllers\AuthController.php(15): App\Core\View::render('auth/login', Array, NULL)
+#9 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AuthController->loginForm()
+#10 C:\laragon\www\invIT\app\Core\App.php(146): App\Core\Router->dispatch()
+#11 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#12 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 23
+[24-Sep-2026 09:34:00 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\SettingController.php on line 61
+[24-Sep-2026 09:34:18 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\SettingController.php on line 61
+[24-Sep-2026 09:34:32 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\SettingController.php on line 61
+[24-Sep-2026 09:34:54 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\SettingController.php on line 61
+[24-Sep-2026 10:00:51 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:00:51 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:04:54 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:04:54 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:06:14 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:06:14 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:08:55 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:08:55 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:09:42 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:09:42 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:09:57 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:09:57 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:10:23 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:10:23 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:11:49 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:11:49 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:12:22 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:12:22 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:12:44 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:12:44 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:13:09 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:13:09 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:13:43 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:13:43 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:13:50 Asia/Jakarta] PHP Warning:  Undefined variable $statuses in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:13:50 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, null given in C:\laragon\www\invIT\views\assets\show.php on line 115
+[24-Sep-2026 10:51:53 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ip_address' in 'field list' in C:\laragon\www\invIT\app\Core\Database.php:35
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(35): PDO->prepare('UPDATE `assets`...')
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `assets`...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\AssetController.php(240): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\AssetController.php(239): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->update(Object(App\Core\Request), 1)
+#6 C:\laragon\www\invIT\app\Core\App.php(173): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 35
+[24-Sep-2026 10:52:16 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ip_address' in 'field list' in C:\laragon\www\invIT\app\Core\Database.php:35
+Stack trace:
+#0 C:\laragon\www\invIT\app\Core\Database.php(35): PDO->prepare('UPDATE `assets`...')
+#1 C:\laragon\www\invIT\app\Models\Model.php(115): App\Core\Database::run('UPDATE `assets`...', Array)
+#2 C:\laragon\www\invIT\app\Controllers\AssetController.php(240): App\Models\Model::update(1, Array)
+#3 C:\laragon\www\invIT\app\Core\Database.php(56): App\Controllers\AssetController->App\Controllers\{closure}(Object(PDO))
+#4 C:\laragon\www\invIT\app\Controllers\AssetController.php(239): App\Core\Database::transaction(Object(Closure))
+#5 C:\laragon\www\invIT\app\Core\Router.php(85): App\Controllers\AssetController->update(Object(App\Core\Request), 1)
+#6 C:\laragon\www\invIT\app\Core\App.php(173): App\Core\Router->dispatch()
+#7 C:\laragon\www\invIT\public\index.php(27): App\Core\App->handle()
+#8 {main}
+  thrown in C:\laragon\www\invIT\app\Core\Database.php on line 35
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 203
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 204
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 205
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 207
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 208
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 212
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 213
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 214
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 215
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 216
+[24-Sep-2026 10:53:34 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\AssetController.php on line 217
+[24-Sep-2026 13:16:15 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\SettingController.php on line 92
+[25-Sep-2026 10:44:32 Asia/Jakarta] PHP Warning:  Undefined array key "assigned_at" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 48
+[25-Sep-2026 10:44:32 Asia/Jakarta] PHP Warning:  Undefined array key "reason" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 49
+[25-Sep-2026 10:44:32 Asia/Jakarta] PHP Warning:  Undefined array key "return_due_date" in C:\laragon\www\invIT\views\print\handover-assignment.php on line 50
+[25-Sep-2026 15:31:40 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\SettingController.php on line 61
+[28-Sep-2026 13:58:07 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 80
+[28-Sep-2026 13:58:25 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 110
+[28-Sep-2026 13:58:26 Asia/Jakarta] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\invIT\app\Controllers\MaintenanceController.php on line 115
